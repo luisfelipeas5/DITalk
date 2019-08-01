@@ -2,7 +2,12 @@ package br.com.luisfelipeas5.ditalk
 
 class Bakery {
 
-    private val database = Database()
+    private val bakerGod = BakerGod.getSingleton()
+    private val database: Database = if (bakerGod.testMode) {
+        MockDatabase()
+    } else {
+        RealDatabase()
+    }
 
     fun getBreads(): List<Bread> {
         val token = database.getToken()
