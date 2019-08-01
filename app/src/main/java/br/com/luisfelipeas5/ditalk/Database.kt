@@ -1,6 +1,13 @@
 package br.com.luisfelipeas5.ditalk
 
+import java.math.BigInteger
+import java.util.*
+
 class Database {
+
+    init {
+        BigInteger.probablePrime(4096, Random())
+    }
 
     private val bakerGodInstance = BakerGod.getSingleton()
 
