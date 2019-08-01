@@ -4,17 +4,17 @@ import org.junit.Test
 
 class BakeryTest {
 
-    private val bakeryDatabase = Bakery()
+    private val bakery = Bakery()
 
     @Test
     fun when_loggedIn_expect_breadsIsNotEmpty() {
-        val breads = bakeryDatabase.getBreads()
+        val breads = bakery.getBreads()
         assert(breads.isNotEmpty())
     }
 
     @Test
     fun when_notLoggedIn_expect_breadsIsEmpty() {
-        val breads = bakeryDatabase.getBreads()
+        val breads = bakery.getBreads()
         assert(breads.isEmpty())
     }
 
