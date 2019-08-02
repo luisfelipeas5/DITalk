@@ -2,9 +2,9 @@ package br.com.luisfelipeas5.ditalk
 
 class MockDatabase: Database {
 
-    private val bakerGodInstance = BakerGod.getSingleton()
+    var tokenMocked: String? = null
 
     override fun getToken(): String? {
-        return bakerGodInstance.tokenMocked
+        return tokenMocked
     }
 }
