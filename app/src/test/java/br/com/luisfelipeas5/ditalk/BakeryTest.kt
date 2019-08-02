@@ -1,5 +1,7 @@
 package br.com.luisfelipeas5.ditalk
 
+import br.com.luisfelipeas5.ditalk.bakery.Bakery
+import br.com.luisfelipeas5.ditalk.database.Database
 import org.junit.Before
 import org.junit.Test
 import org.mockito.Mock
@@ -10,7 +12,7 @@ class BakeryTest {
 
     @Mock
     lateinit var database: Database
-    lateinit var bakery: Bakery
+    private lateinit var bakery: Bakery
 
     @Before
     fun runBeforeEveryTest() {

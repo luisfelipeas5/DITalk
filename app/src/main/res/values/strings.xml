@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">DITalk</string>
+    <string name="app_name">MadeinBakers</string>
+    <string name="bread_counter">Pães no cardápio</string>
 </resources>

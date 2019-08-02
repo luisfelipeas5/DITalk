@@ -1,4 +1,4 @@
-package br.com.luisfelipeas5.ditalk
+package br.com.luisfelipeas5.ditalk.model
 
 class Bread(id: Int) {
 
