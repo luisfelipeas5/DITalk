@@ -1,9 +1,6 @@
 package br.com.luisfelipeas5.ditalk
 
-class Bakery {
-
-    private val bakerGod = BakerInjector.getSingleton()
-    private val database: Database = bakerGod.getDatabase()
+class Bakery(private val database: Database) {
 
     fun getBreads(): List<Bread> {
         val token = database.getToken()
